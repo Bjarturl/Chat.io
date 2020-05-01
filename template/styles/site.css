@@ -1,0 +1,115 @@
+.container {
+    padding-top: 20px;
+    padding-bottom: 440px;
+    text-align: center;
+}
+
+.nickname {
+    margin-top: 150px;
+    font-size: 40px;
+} 
+.nickname label {
+    font-size: 40px;
+}
+
+.nickname button {
+    margin-top: 10px;
+}
+
+.chat-window {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 500px;
+}
+
+.sidebar {
+    display: grid;
+    grid-template-rows: 0.1fr 0.7fr 0.15fr;
+    font-size: 18px;
+    border-left: 1px solid black;
+}
+
+.sidebar-header {
+    border-bottom: 3px solid black;
+}
+
+.sidebar-list {
+    overflow: scroll;
+}
+
+
+.sidebar-element {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 1em;
+    transition: color .5s;
+}
+
+.sidebar-element:hover{
+    color:  #969595;
+    cursor: pointer;
+}
+
+.roomcreate {
+    border-top: 3px solid black;
+}
+
+#roomcreate-inputs {
+    margin-top: 5px;
+    display: grid;
+    grid-template-areas:
+        "label label"
+        "text pass";
+}
+
+#roomcreate-inputs input{
+    width: 110px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 0;
+}
+
+#roomcreate-inputs p{
+    grid-area: label;
+    text-decoration: underline;
+}
+
+.conversation {
+    display: grid;
+    grid-template-rows: 0.1fr 0.8fr 0.1fr;
+}
+
+.conversation input {
+    width: 50%;
+}
+
+.chat-box {
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow: scroll;
+}
+
+.message {
+    display: flex;
+}
+
+.msgdate {
+    text-decoration: underline;
+    margin-right: 5px;
+}
+
+#userline {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+
+}  
+
+#user-ops {
+    height: 30px;
+}
